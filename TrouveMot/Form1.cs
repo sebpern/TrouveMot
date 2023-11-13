@@ -27,7 +27,7 @@ namespace TrouveMot
         //on crée un sous programme pour définir les mots
         //on pourrait le faire direcement dans public Form1
         //mais c'est plus propre de découper le programme
-         void definirMot()
+        void definirMot()
         {
             mots[0] = "table";
             mots[1] = "chaise";

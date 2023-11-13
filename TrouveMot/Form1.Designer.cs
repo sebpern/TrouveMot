@@ -32,11 +32,16 @@
             this.btnAfficherCacher = new System.Windows.Forms.Button();
             this.lblInfoClic = new System.Windows.Forms.Label();
             this.lblClic = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gbxJeu.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbxJeu
             // 
-            this.gbxJeu.Location = new System.Drawing.Point(468, 76);
+            this.gbxJeu.Controls.Add(this.label2);
+            this.gbxJeu.Controls.Add(this.label1);
+            this.gbxJeu.Location = new System.Drawing.Point(440, 72);
             this.gbxJeu.Name = "gbxJeu";
             this.gbxJeu.Size = new System.Drawing.Size(273, 159);
             this.gbxJeu.TabIndex = 0;
@@ -72,6 +77,24 @@
             this.lblClic.TabIndex = 3;
             this.lblClic.Text = "0";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(61, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Bienvenu sur mon jeu";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(56, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "c \'est parti";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -83,6 +106,8 @@
             this.Controls.Add(this.gbxJeu);
             this.Name = "Form1";
             this.Text = "Le Trouve Mot";
+            this.gbxJeu.ResumeLayout(false);
+            this.gbxJeu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,6 +119,8 @@
         private System.Windows.Forms.Button btnAfficherCacher;
         private System.Windows.Forms.Label lblInfoClic;
         private System.Windows.Forms.Label lblClic;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
